@@ -19,7 +19,7 @@ body {
     text-align: center;
 }
 
-input {
+input, select {
     padding: 10px;
     border-radius: 10px;
     border: none;
@@ -36,4 +36,19 @@ button {
 button:hover {
     background-color: #475e5d;
     color: white;
+}
+
+.button_group {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    gap: 10px;
+}
+
+.message {
+    text-align: center;
+    display: none;
+}
+
+.show {
+    display: block;
 }

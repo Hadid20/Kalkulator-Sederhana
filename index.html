@@ -8,7 +8,9 @@
   </head>
   <body>
     <div class="container">
-      <h1>Kalkulator</h1>
+      <div class="title">
+        <h1>KALKULATOR</h1>
+      </div>
       <div>
         <div class="container_input">
           <input
@@ -35,7 +37,16 @@
         </div>
       </div>
 
-      <button onclick="Hitung()">Hitung</button>
+      <div class="button_group">
+        <button onclick="Hitung()">Hitung</button>
+        <button onclick="show()">?</button>
+      </div>
+      <div class="message" id="message">
+        <h1>Tutorial</h1>
+        <p>Masukan Nilai Pertama di input sebelah kiri anda</p>
+        <p>Kemudian masukan nilai kedua juga di input sebelah kanan</p>
+        <p>langkah selanutnya adalah pilih operator nya bisa +, -, *, /</p>
+      </div>
     </div>
 
     <script src="./script.js"></script>

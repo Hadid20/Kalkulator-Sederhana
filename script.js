@@ -25,3 +25,8 @@ function Hitung() {
 
   document.getElementById("hasilp").innerHTML = hasil;
 }
+
+function show() {
+  let message = document.getElementById("message");
+  message.classList.toggle("show");
+}
