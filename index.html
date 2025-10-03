@@ -4,18 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <input type="number" id="num1" placeholder="Masukan Nilai Pertama" />
-    <select name="" id="operator">
-      <option value="1">+</option>
-      <option value="2">-</option>
-      <option value="3">*</option>
-      <option value="4">/</option>
-    </select>
-    <input type="number" id="num2" placeholder="Masukan Nilai Kedua" />
-    <h1 id="hasilp">.....hasil..</h1>
-    <button onclick="Hitung()">Hitung</button>
+    <div class="container">
+      <h1>Kalkulator</h1>
+      <div>
+        <div class="container_input">
+          <input
+            type="number"
+            id="num1"
+            class="num1"
+            placeholder="Masukan Nilai Pertama"
+          />
+          <select name="" id="operator">
+            <option value="1">+</option>
+            <option value="2">-</option>
+            <option value="3">*</option>
+            <option value="4">/</option>
+          </select>
+          <input
+            type="number"
+            id="num2"
+            placeholder="Masukan Nilai Kedua"
+            class="num1"
+          />
+        </div>
+        <div>
+          <h1 id="hasilp">.....hasil..</h1>
+        </div>
+      </div>
+
+      <button onclick="Hitung()">Hitung</button>
+    </div>
+
     <script src="./script.js"></script>
   </body>
 </html>
